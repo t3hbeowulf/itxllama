@@ -25,7 +25,7 @@ Below is a breakdown of each option and several add-ons that are compatible.
     * An IDE cable affixed to the pins on board below and to the Raspberry Pi 4 is necessary to use this feature. 
     * At this time, system setup for the Pi 4's OS is up to the user.
     * Pin Header: (_below the female Pi Zero 2 header_)
-    * <p><img src=itxllama/images/som-alignment-1.jpg title="ITX-Llama w/Vortex86EX SoM" width=50%></p>
+    * <p><img src=../images/som-alignment-1.jpg title="Raspberry Pi 4 header pins visible" width=50%></p>
 
 ## Wavetable MIDI Support
 
