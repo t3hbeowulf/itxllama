@@ -2,14 +2,17 @@
 
 The ITX-Llama is a modern recreation of the best that late DOS/early Windows 98 computing had to offer, now reimagined into an ITX form-factor! For more information, visit the [Vogons thread][vogons-thread].
 
+<p>
+  <img src=images/overview.jpg title="ITX-Llama" width=75%>
+</p>
+
 ## Documentation Contents
 - [User's Guide](user-guide.md)
 - [FAQ](faq.md)
-- [Hardware Compatibility](compatibility-hw.md)
-
-<p>
-  <img src=images/overview.jpg title="ITX-Llama w/Vortex86EX SoM" width=50%>
-</p>
+- [Accessories](accessories.md)
+- [MIDI](midi.md)
+- [Storage](storage.md)
+- [Hardware Compatibility Matrix](compatibility-matrix.md)
 
 ## Specs
 - **CPU:** Designed specifically for the Vortex86EX System on Module:
@@ -40,8 +43,8 @@ The ITX-Llama is a modern recreation of the best that late DOS/early Windows 98 
     - SD card (on IDE Primary)
     - SATA 1.5Gbps Port (on IDE Secondary)
 - Network / Modem:
-    - Onboard 10/100 NIC (realtek with win98 driver support)
-    - Optional E
+    - Onboard 10/100 NIC (Realtek with Win98 driver support)
+    - Optional Wemos D1 Mini ESP8266 for "modem-over-WiFi"
 - Graphics:
     - Universal AGP 1x slot in "PCI Mode" running at 66MHz
 
