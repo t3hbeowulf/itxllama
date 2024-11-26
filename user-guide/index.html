@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>User's Guide - Llama ITX</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" disabled>
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Llama ITX</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../faq/" class="nav-link">FAQs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">User's Guide</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../faq/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/t3hbeowulf/itxllama/blob/main/docs/user-guide.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                                <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                <span class="d-lg-none ms-2">Toggle theme</span>
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                                    <i class="fa-solid fa-sun fa-fw"></i>
+                                    <span class="ms-2">Light</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                                    <i class="fa-solid fa-moon fa-fw"></i>
+                                    <span class="ms-2">Dark</span>
+                                    <i class="fa-solid fa-check ms-auto d-none"></i>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="true">
+                                    <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
+                                    <span class="ms-2">Auto</span>
+                                    <i class="fa-solid fa-check ms-auto"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="../js/darkmode.js"></script>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#itx-llama-users-guide" class="nav-link">ITX-Llama User's Guide</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#installing-the-som" class="nav-link">Installing the SOM</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#jumper-configuration" class="nav-link">Jumper Configuration</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#flashing-the-bios" class="nav-link">Flashing the BIOS</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#dos" class="nav-link">DOS</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#windows-98" class="nav-link">Windows 98</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#windows-98-drivers" class="nav-link">Windows 98 Drivers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#fans" class="nav-link">Fans</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#mt32-pi" class="nav-link">mt32-pi</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="itx-llama-users-guide">ITX-Llama User's Guide<a class="headerlink" href="#itx-llama-users-guide" title="Permanent link"></a></h1>
+<blockquote>
+<p><strong>Note</strong><br />
+This document is still a work in progress.<br />
+For feedback, suggestions, etc. - please add a post to the <a href="https://www.vogons.org/viewtopic.php?t=93480">Vogons thread</a>.</p>
+</blockquote>
+<h3 id="contents">Contents<a class="headerlink" href="#contents" title="Permanent link"></a></h3>
+<ul>
+<li><a href="building.md">Building your own</a></li>
+<li><a href="#installing-the-som">Installing the SOM</a></li>
+<li><a href="#jumper-configuration">Jumper Configuration</a><ul>
+<li><a href="#ps2-or-usb-hid">PS/2 and USB HID</a></li>
+<li><a href="#line-in">Line In</a></li>
+<li><a href="#pi-or-wavetable">Pi or Wavetable</a></li>
+</ul>
+</li>
+<li><a href="#flashing-the-bios">Flashing the BIOS</a></li>
+<li><a href="#dos">DOS</a><ul>
+<li><a href="#mouse-in-dos">Mouse in DOS</a></li>
+<li><a href="#audio-in-dos">Audio in DOS</a></li>
+</ul>
+</li>
+<li><a href="#windows-98">Windows 98</a></li>
+<li><a href="#windows-98-drivers">Windows 98 Drivers</a><ul>
+<li><a href="#tbplus">TBPlus</a></li>
+<li><a href="#usb">USB</a></li>
+<li><a href="#crystal-audio">Crystal Audio</a></li>
+<li><a href="#ethernet">Ethernet</a></li>
+</ul>
+</li>
+<li><a href="#fans">Fans</a></li>
+<li><a href="#mt32-pi">mt32-pi</a></li>
+</ul>
+<h2 id="installing-the-som">Installing the SOM<a class="headerlink" href="#installing-the-som" title="Permanent link"></a></h2>
+<p>When installing the Vortex86EX SOM, <em>carefully</em> align the module as shown in the image below, and <em>gently</em> push it down on the 64 pins.<br />
+Note that the pins on the motherboard are quite thin and fragile, and if you misalign the SOM or use excessive force, they'll likely bend or break.<br />
+Take your time, be careful and double-check the placement before proceeding further!</p>
+<p>
+  <img src=../images/som-alignment-1.jpg title="SOM alignment" width=100%>
+  <img src=../images/som-alignment-2.jpg title="SOM alignment" width=100%>
+</p>
+
+<h2 id="jumper-configuration">Jumper Configuration<a class="headerlink" href="#jumper-configuration" title="Permanent link"></a></h2>
+<p>The board should come preinstalled with all the jumpers necessary.<br />
+For changing the configuration, here's a quick walkthrough of the different jumpers and their functionality.</p>
+<h3 id="ps2-or-usb-hid">PS/2 or USB HID<a class="headerlink" href="#ps2-or-usb-hid" title="Permanent link"></a></h3>
+<p>Jumpers: J7, J12, J15, J16</p>
+<p>
+  <img src=../images/usb-ps2.jpg title="PS/2 configuration" width=50%>
+</p>
+<p>If you want to use a real PS/2 keyboard connected to the purple PS/2 port, place the two topmost jumpers (J15 and J16) to the leftmost position ("PS/2"). For USB HID keyboard connected to one of the white USB ports (between the PS/2 and serial port), place the jumpers to the rightmost side ("USB").<br />
+Same goes for PS/2 mouse and jumpers J7 and J12.</p>
+<h3 id="line-in">Line In<a class="headerlink" href="#line-in" title="Permanent link"></a></h3>
+<p>Jumpers: J39, J40</p>
+<p>
+  <img src=../images/line-in.jpg title="Line In" width=50%>
+</p>
+<p>If you want to use an external audio source connected to the blue 3.5mm jack port, place both jumpers to the leftmost position ("EXT").<br />
+For using a Raspberry Pi Zero2 or Wavetable board as line-in to the sound card, place the two jumpers to the rightmost position ("INT").</p>
+<h3 id="pi-or-wavetable">Pi or Wavetable<a class="headerlink" href="#pi-or-wavetable" title="Permanent link"></a></h3>
+<p>Jumpers: J25, J26, J27</p>
+<p>
+  <img src=../images/pi-wt.jpg title="PI/WT configuration" width=50%>
+</p>
+<p>For using a Raspberry Pi (Zero2, 3 or 4) for converting MIDI to analog audio, place the three jumpers to the rightmost position ("PI").<br />
+For using a wavetable board, place the jumpers to the leftmost position ("WT").</p>
+<h2 id="flashing-the-bios">Flashing the BIOS<a class="headerlink" href="#flashing-the-bios" title="Permanent link"></a></h2>
+<p>If you've purchased the Vortex86EX system-on-module (SOM) from DMP, ICOP, etc - you need to flash the BIOS first.<br />
+Since the BIOS that comes pre-installed on the SOM is set up for another pinout/configuration, the microSD card slot isn't availble yet, and you need to use a USB flash drive for this part.  </p>
+<p>Format the flash drive with a DOS-bootable FAT16/32 partition and copy over the <a href="INITBIOS">ANYBIOS.EXE and ITXBIOS.ROM files</a>.<br />
+Alternatively (and easier), just do a block-level transfer of the <a href="INITBIOS">INITBIOS.IMG</a> file to the flash drive using <a href="https://www.balena.io/etcher">Balena Etcher</a>, <code>dd</code> or something similar.<br />
+Then place the flash drive in one of the USB ports (the ones below the RJ45 port). Plug a USB keyboard in the other port. <strong>Note</strong>: at this point, a keyboard plugged into one of the two <em>HID-only (white)</em> ports won't work, you need to use the ones below the RJ45 port!<br />
+Power up the system, and hopefully you'll get a DOS prompt. From there just type:</p>
+<pre><code>anybios w itxbios.rom
+</code></pre>
+<p>Once done, shut down the computer, remove the flash drive and move the keyboard to one of the HID ports.</p>
+<h2 id="dos">DOS<a class="headerlink" href="#dos" title="Permanent link"></a></h2>
+<p>Follow these instructions to set up DOS on a microSD card, SATA drive or USB flash drive:<br />
+(Note: a SATA drive is faster, but this isn't that important in DOS. I recommend using a microSD card, because you'll be able to use the "clicker" feature to simulate the seeking sounds of an old spinning drive, if you're interested in that)
+1. Turn off the system, insert a drive of choice.
+2. Boot the system, press ESC to bring up the boot menu.
+3. Choose the Virtual Floppy drive.
+4. Run <code>fdisk</code>, select and partition the drive however you want. Make sure to have at least one primary partition, and make it <code>Active</code>.
+5. Quit fdisk and reboot the system.
+6. Once again, boot the system using the Virtual Floppy drive.
+7. Run <code>fdisk /mbr</code> to write the correct MBR bytes to the new drive.
+8. Run <code>format c: /s</code> to format the new drive and copy over the necessary system files.
+9. Shut down the machine and remove the drive.
+10. Copy over DOS and whatever else you want from a modern computer.</p>
+<h3 id="mouse-in-dos">Mouse in DOS<a class="headerlink" href="#mouse-in-dos" title="Permanent link"></a></h3>
+<p>Use <a href="[src-root]/DOS-utils">CuteMouse (CTMOUSE.EXE)</a>.</p>
+<h3 id="audio-in-dos">Audio in DOS<a class="headerlink" href="#audio-in-dos" title="Permanent link"></a></h3>
+<p>The Crystal CS4237B sound chip is automatically initialized and configured from the BIOS, so you don't need any drivers in DOS.<br />
+If you wish to change any of the mixer settings, use <a href="DOS-Utils">CWDMIX.EXE</a>.</p>
+<h2 id="windows-98">Windows 98<a class="headerlink" href="#windows-98" title="Permanent link"></a></h2>
+<p>Before proceeding, I'd <em>strongly</em> recommend using a SATA drive for Windows 98, as the performance is noticably better than running from an SD card or USB drive.  </p>
+<p>Download Windows 98 SE from <a href="https://winworldpc.com/download/417d71c2-ae18-c39a-11c3-a4e284a2c3a5">WinWorldPC</a>. Product keys are there as well.  </p>
+<p>Prepare a bootable DOS drive (see the <a href="#dos">DOS</a> section above), copy the <code>WIN98</code> folder over to the drive and run the <code>SETUP.EXE</code> from within.</p>
+<p>Note: at some point during the installation, you'll get a crash. This is due to the IDE driver being incompatible with the Vortex86EX's IDE controller.<br />
+Reboot, and choose "Safe Mode". From within Win98, install the <a href="WIN98-drivers/TBPLUS">TBPLUS</a> drivers from R. Loew and then reboot again and complete the installation.  </p>
+<p>An easier way is to install Windows 98 SE is using a <a href="WIN98">version I've prepared</a> which has the IDE drivers "slipstreamed" (meaning that Windows will use the updated drivers automatically).</p>
+<h2 id="windows-98-drivers">Windows 98 Drivers<a class="headerlink" href="#windows-98-drivers" title="Permanent link"></a></h2>
+<h3 id="tbplus">TBPlus<a class="headerlink" href="#tbplus" title="Permanent link"></a></h3>
+<p>If you installed the TBPlus drivers during the Windows 98 installation, or used the slipstreamed Windows 98 installer you're all set. If not, install the <a href="WIN98-drivers/TBPLUS">TBPlus drivers</a>.</p>
+<h3 id="usb">USB<a class="headerlink" href="#usb" title="Permanent link"></a></h3>
+<p>In the BIOS Settings, you can choose to have USB flash drives appear to the system as fixed disks.<br />
+With this setting enabled, they'll show up as regular hard drives in DOS and Windows.<br />
+If you turn this setting <em>off</em>, you can use flash drives as removable storage in Windows 98. Use <a href="WIN98-drivers/USB">nusb36e.exe</a> to install the required drivers.</p>
+<h3 id="crystal-audio">Crystal Audio<a class="headerlink" href="#crystal-audio" title="Permanent link"></a></h3>
+<p>Run <code>SETUP.EXE</code> from the <a href="WIN98-drivers/CWD-v286-1998-itx-llama">Crystal Audio</a> driver folder.</p>
+<h3 id="ethernet">Ethernet<a class="headerlink" href="#ethernet" title="Permanent link"></a></h3>
+<p>From Device Manager, find the Ethernet device and install the <a href="WIN98-drivers/r6040_win98">RDC R6040 driver</a>.</p>
+<h2 id="fans">Fans<a class="headerlink" href="#fans" title="Permanent link"></a></h2>
+<p>The Vortex86EX SOM doesn't draw much power, and shouldn't require active cooling if running at or below 300 MHz.<br />
+If you do wish to add one or more fans, the motherboard has three separately controllable 4-pin PWM fan connectors:</p>
+<p>
+  <img src=../images/fan-1.jpg title="Fan header" width=50%>
+</p>
+<p>Simply connect a modern 4-pin fan to one of these headers, and set the corresponding jumper to either 5V or 12V:</p>
+<p>
+  <img src=../images/fan-2.jpg title="Fan configuration" width=50%>
+</p>
+
+<p>Note: Take care <strong>not</strong> to supply 12V to a 5V fan - you'll likely fry it.</p>
+<h2 id="mt32-pi">mt32-pi<a class="headerlink" href="#mt32-pi" title="Permanent link"></a></h2>
+<p>If you want to use a Raspberry Pi as an MT-32 or MIDI synthesizer, download and install the <a href="https://github.com/dwhinham/mt32-pi">mt32-pi</a> bare-metal software on the Pi, and plug it into the motherboard.<br />
+If you go with a Pi Zero 2 (the easiest and cheapest option), make sure to solder the 40-pin connector to the <em>bottom</em> side of the Pi, as seen here:</p>
+<p>
+  <img src=../images/pi-zero2-alignment.jpg title="Pi Zero 2 alignment" width=50%>
+</p>
+
+<p>Look at the <a href="https://github.com/dwhinham/mt32-pi">mt32-pi github page</a> for setup, configuration options etc.<br />
+As a minimum, you want to set the output of the mt32-pi as type "i2s":</p>
+<pre><code>output_device = i2s
+</code></pre>
+<p>Use the <a href="https://github.com/gmcn42/mt32-pi-control/tree/main/dos_bin">mt32-pi-control</a> software from DOS to switch between MT-32 and MIDI mode.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
