@@ -77,8 +77,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 0.25,
-          "width": 1.475
+          "height": 0.64,
+          "width": 0.54
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -613,6 +613,14 @@
       {
         "netclass": "USB",
         "pattern": "/USBHID*"
+      },
+      {
+        "netclass": "PCIE",
+        "pattern": "/JBB2"
+      },
+      {
+        "netclass": "PCIE",
+        "pattern": "/JBCY"
       }
     ]
   },
