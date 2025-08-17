@@ -36805,10 +36805,6 @@
 		(uuid "17c7af51-e9ce-49cb-b003-e5600080cdd1")
 	)
 	(no_connect
-		(at 76.2 396.24)
-		(uuid "1823c6f9-bb7c-4b24-a618-4c7783adac59")
-	)
-	(no_connect
 		(at 223.52 99.06)
 		(uuid "18aea751-63e4-4990-9d3d-54aff8c14fbc")
 	)
@@ -37093,10 +37089,6 @@
 		(uuid "89eea0e7-fafe-4666-b8df-a49932b97dfb")
 	)
 	(no_connect
-		(at 71.12 396.24)
-		(uuid "8a6a150d-5244-49d7-8692-c7849d4466d2")
-	)
-	(no_connect
 		(at 157.48 553.72)
 		(uuid "8ceaeb32-5659-48d4-a612-2da7c22c8d36")
 	)
@@ -37163,10 +37155,6 @@
 	(no_connect
 		(at 157.48 556.26)
 		(uuid "a3bd8071-ed69-415b-be66-f45213b00540")
-	)
-	(no_connect
-		(at 83.82 396.24)
-		(uuid "a4c8fb1e-af66-42aa-b0d8-79d496ba691a")
 	)
 	(no_connect
 		(at 259.08 99.06)
@@ -39579,6 +39567,16 @@
 			(type default)
 		)
 		(uuid "1e27bb26-5dcd-4bed-825f-5065f976ba30")
+	)
+	(wire
+		(pts
+			(xy 83.82 396.24) (xy 83.82 407.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e39ce1e-64d7-4bf1-9e6e-4542760a24be")
 	)
 	(wire
 		(pts
@@ -45422,6 +45420,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 396.24) (xy 76.2 407.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6069fb4b-c481-4998-b9a7-425ae76b8e66")
+	)
+	(wire
+		(pts
 			(xy 523.24 233.68) (xy 520.7 233.68)
 		)
 		(stroke
@@ -47349,6 +47357,16 @@
 			(type default)
 		)
 		(uuid "7584ed7e-6361-430b-b7ff-cb483d1e733e")
+	)
+	(wire
+		(pts
+			(xy 71.12 396.24) (xy 71.12 407.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "758c1ea4-18a9-4fb1-87b7-02f5400f43b9")
 	)
 	(wire
 		(pts
@@ -61250,6 +61268,16 @@
 		)
 		(uuid "4f4acd89-0ee6-4ab2-96d4-0817ee3e9863")
 	)
+	(label "JBCY"
+		(at 76.2 407.67 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4f66fb6d-0101-4404-84c0-999df597f666")
+	)
 	(label "PWM_HDD"
 		(at 694.69 623.57 180)
 		(effects
@@ -63070,6 +63098,16 @@
 		)
 		(uuid "a9b9dcdf-1e94-431a-a4e9-b9537ac3d0ae")
 	)
+	(label "JBB1"
+		(at 83.82 407.67 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "aa31e926-ea28-4288-be31-74037b34b191")
+	)
 	(label "AUDIO_L_WT"
 		(at 86.36 576.58 180)
 		(effects
@@ -63309,6 +63347,16 @@
 			(justify left bottom)
 		)
 		(uuid "b66c2aae-d49b-4304-9ba8-c4ecd0be0395")
+	)
+	(label "JBB2"
+		(at 71.12 407.67 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b6e38203-37f1-462f-a390-edc3ac249707")
 	)
 	(label "X_SD_DAT0"
 		(at 671.83 518.16 0)
@@ -64405,6 +64453,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(color 255 35 67 1)
 			)
 			(justify left bottom)
 		)
@@ -110692,7 +110741,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 245.11 440.69 0)
 			(effects
 				(font
@@ -110701,12 +110750,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "15-pin female receptacle socket D-SUB connector (low-density/2 columns)"
 			(at 245.11 440.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "LCSC" "C77835"
